@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-smooth: always; }
+
+body {
+  overflow-x: hidden; }
+
+.navbar .logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 100px;
+  margin-top: 15px; }
+  .navbar .logo-container .logo {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 44px; }
+.navbar .menu-list-container {
+  position: absolute;
+  z-index: 2;
+  top: 15px;
+  right: 80px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 2px; }
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 10px; }
+
+.menu-list-item {
+  padding: 5px 10px; }
+  .menu-list-item a {
+    color: white;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 19px; }
+
+.splash-image-container {
+  width: 100vw;
+  height: 70vh;
+  background-image: url("../img/coffeeWifi.jpg");
+  background-size: cover;
+  background-position: 0% 72%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#slides {
+  position: relative;
+  height: 70px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  #slides .slide {
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    list-style-type: none;
+    color: white;
+    font-size: 66px;
+    transition: opacity 1s ease-in;
+    font-family: "Open Sans", sans-serif; }
+  #slides .showing {
+    opacity: 1;
+    z-index: 2; }
+
+.about-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: row; }
+  .about-container .about-content-container {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 100px;
+    border-radius: 12px; }
+    .about-container .about-content-container .about-header {
+      color: black;
+      font-size: 34px;
+      font-family: "Open Sans", sans-serif; }
+    .about-container .about-content-container .about-content {
+      padding: 32px 0px;
+      width: 600px;
+      text-align: center;
+      color: #333333;
+      font-size: 17px;
+      font-family: "Open Sans", sans-serif; }
+
+.about-img {
+  height: 100px;
+  width: 100px;
+  background-image: url("../img/studying.png");
+  background-size: contain; }
+
+.demo-container {
+  height: 800px;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  padding-bottom: 30px; }
+  .demo-container .demo-content-container {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 700; }
+  .demo-container .emulator-container {
+    margin-top: 30px; }
+
+.features-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .features-container .features-header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 34px;
+    margin-top: 60px; }
+  .features-container .feature-items-container:nth-of-type(1) {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #d4d6d8;
+    justify-content: center; }
+    .features-container .feature-items-container:nth-of-type(1) .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 300px;
+      height: 200px;
+      margin: 20px 30px; }
+      .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-picture-1 {
+        padding: 10px;
+        background-image: url("../img/funnel.png");
+        height: 100px;
+        width: 100px;
+        background-size: contain; }
+      .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-picture-2 {
+        padding: 10px;
+        background-image: url("../img/search.png");
+        height: 100px;
+        width: 100px;
+        background-size: contain; }
+      .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-picture-3 {
+        padding: 10px;
+        background-image: url("../img/star.png");
+        height: 100px;
+        width: 100px;
+        background-size: contain; }
+      .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-content {
+        text-align: center;
+        margin: 15px;
+        font-family: "Open Sans", sans-serif;
+        color: #333333; }
+
+.feature-item:nth-child(2) {
+  border-left: 1px solid #d4d6d8;
+  border-right: 1px solid #d4d6d8; }
+
+.feature-items-container:nth-of-type(2) {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .feature-items-container:nth-of-type(2) .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    margin: 20px 30px; }
+    .feature-items-container:nth-of-type(2) .feature-item .feature-picture-4 {
+      padding: 10px;
+      background-image: url("../img/coffee-cup.png");
+      height: 100px;
+      width: 100px;
+      background-size: contain; }
+    .feature-items-container:nth-of-type(2) .feature-item .feature-picture-5 {
+      padding: 10px;
+      background-image: url("../img/information.png");
+      height: 100px;
+      width: 100px;
+      background-size: contain; }
+    .feature-items-container:nth-of-type(2) .feature-item .feature-picture-6 {
+      padding: 10px;
+      background-image: url("../img/review.png");
+      height: 100px;
+      width: 100px;
+      background-size: contain; }
+    .feature-items-container:nth-of-type(2) .feature-item .feature-content {
+      text-align: center;
+      margin: 15px;
+      font-family: "Open Sans", sans-serif;
+      color: #333333; }
+
+.footer-container {
+  border-top: 1px solid #ccc;
+  padding: 20px 70px;
+  margin-top: 150px;
+  height: 200px;
+  background-color: #EBECF2;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  .footer-container .list-container {
+    display: flex;
+    flex-direction: column; }
+  .footer-container .team-header {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #ADAEB2; }
+  .footer-container .list-block {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    justify-content: space-around; }
+    .footer-container .list-block .social-info {
+      list-style-type: none;
+      display: flex;
+      flex-direction: column; }
+      .footer-container .list-block .social-info .name {
+        font-family: "Open Sans", sans-serif;
+        font-size: 18px;
+        color: #6F7073; }
+      .footer-container .list-block .social-info li {
+        text-align: center; }
+      .footer-container .list-block .social-info a {
+        text-align: center; }
+        .footer-container .list-block .social-info a li .linkedin-icon {
+          position: relative;
+          left: 6px; }
+
+a:nth-child(2) {
+  padding: 15px 0; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+.navbar
+  .logo-container
+    position: absolute
+    top: 0
+    left: 0
+    margin-left: 100px
+    margin-top: 15px
+    .logo
+      font-family: $mont
+      color: white
+      font-size: 44px
+
+  .menu-list-container
+    position: absolute
+    z-index: 2
+    top: 15px
+    right: 80px
+    background-color: rgba(0,0,0,0.6)
+    border-radius: 2px
+
+
+.menu-list
+    display: flex
+    flex-direction: row
+    list-style-type: none
+    padding: 10px
+
+.menu-list-item
+  padding: 5px 10px
+  a
+    color: white
+    text-decoration: none
+    font-family: $opensans
+    font-size: 19px
+
+.splash-image-container
+  width: 100vw
+  height: 70vh
+  background-image: url('../img/coffeeWifi.jpg')
+  background-size: cover
+  background-position: 0% 72%
+  display: flex
+  justify-content: center
+  align-items: center
+
+#slides
+  position: relative
+  height: 70px
+  width: 400px
+  display: flex
+  justify-content: center
+  align-items: center
+  .slide
+    position: absolute
+    opacity: 0
+    z-index: 1
+    list-style-type: none
+    color: white
+    font-size: 66px
+    transition: opacity 1s ease-in
+    font-family: $opensans
+  .showing
+    opacity: 1
+    z-index: 2
