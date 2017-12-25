@@ -321,6 +321,9 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .footer-container {
+      height: auto; } }
   .footer-container .list-container {
     display: flex;
     flex-direction: column; }
@@ -329,28 +332,50 @@ body {
     font-size: 36px;
     text-align: center;
     color: #ADAEB2; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .footer-container .team-header {
+        font-size: 4em; } }
   .footer-container .list-block {
     display: flex;
     flex-direction: row;
     width: 800px;
     justify-content: space-around; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .footer-container .list-block {
+        flex-direction: column;
+        align-items: center;
+        height: 100%; } }
     .footer-container .list-block .social-info {
       list-style-type: none;
       display: flex;
       flex-direction: column; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .footer-container .list-block .social-info {
+          padding: 30px; } }
       .footer-container .list-block .social-info .name {
         font-family: "Open Sans", sans-serif;
         font-size: 18px;
         color: #6F7073; }
-      .footer-container .list-block .social-info li {
-        text-align: center; }
-      .footer-container .list-block .social-info a {
-        text-align: center; }
-        .footer-container .list-block .social-info a li .linkedin-icon {
-          position: relative;
-          left: 6px; }
-
-a:nth-child(2) {
-  padding: 15px 0; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+          .footer-container .list-block .social-info .name {
+            font-size: 2.8em;
+            text-align: center; } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .footer-container .list-block .social-info .social-icons {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          padding-top: 30px;
+          width: 50vw; }
+          .footer-container .list-block .social-info .social-icons .github-icon {
+            content: url("../img/github-32.png"); } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (min-device-width: 320px) and (max-device-width: 480px) {
+      .footer-container .list-block .social-info .social-icons .github-icon {
+        content: url("../img/github-120.png"); } }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+          .footer-container .list-block .social-info .social-icons .linkedin-icon {
+            content: url("../img/linkedin-34.png");
+            content: url("../img/linkedin-120.png"); } }
 
 /*# sourceMappingURL=main.css.map */
