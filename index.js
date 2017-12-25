@@ -17,9 +17,15 @@ document.addEventListener("DOMContentLoaded", () => {
       if (menuList.className.includes("hidden")) {
         menuList.className = originalClasses;
       } else {
-        menuList.className += " hidden"        
+        menuList.className += " hidden"
       }
     })
+    let emulatorContainer = document.getElementsByClassName("emulator-container")[0];
+    let p = document.createElement("p");
+    emulatorContainer.innerHTML = "";
+    p.innerHTML = "Try out our demo on desktop to get the full experience!"
+    p.className = "emulator-alert"
+    emulatorContainer.appendChild(p);
   }
 
 });

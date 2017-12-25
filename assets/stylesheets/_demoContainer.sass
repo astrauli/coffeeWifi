@@ -9,9 +9,22 @@
   border-top: 1px solid #aaa
   border-bottom: 1px solid #aaa
   padding-bottom: 30px
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+    height: 40vh
   .demo-content-container
     font-family: $opensans
     font-size: 34px
     font-weight: 700
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+      font-size: 4em
   .emulator-container
     margin-top: 30px
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+      padding: 6em
+      text-align: center
+      font-weight: 700
+      color: grey
+
+.emulator-alert
+  font-size: 4em
+  font-family: $opensans
