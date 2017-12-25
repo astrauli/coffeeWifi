@@ -38,31 +38,23 @@
         font-family: $opensans
         font-size: 18px
         color: #6F7073
+        text-align: center
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
           font-size: 2.8em
-          text-align: center
       .social-icons
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        padding-top: 30px
+        width: 200px
         @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
-          display: flex
-          flex-direction: row
-          justify-content: space-around
-          align-items: center
-          padding-top: 30px
           width: 50vw
-          .github-icon
-            content: url("../img/github-32.png")
-            @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
-              content: url("../img/github-120.png")
-          .linkedin-icon
-            content: url("../img/linkedin-34.png")
-            @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+        .github-icon
+          content: url("../img/github-32.png")
+          @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+            content: url("../img/github-120.png")
+        .linkedin-icon
+          content: url("../img/linkedin-34.png")
+          @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
             content: url("../img/linkedin-120.png")
-
-      // li
-      //   text-align: center
-      // a
-      //   text-align: center
-      //   li
-      //     .linkedin-icon
-      //       position: relative
-      //       left: 6px
