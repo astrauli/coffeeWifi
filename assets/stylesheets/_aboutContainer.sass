@@ -14,10 +14,14 @@
     align-items: center
     margin: 50px 100px
     border-radius: 12px
+    @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+      height: 45vh
     .about-header
       color: black
       font-size: 34px
       font-family: $opensans
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+        font-size: 5em
     .about-content
       padding: 32px 0px
       width: 600px
@@ -25,9 +29,11 @@
       color: $dark-grey
       font-size: 17px
       font-family: $opensans
+      @media only screen and (min-device-width : 320px) and (max-device-width : 480px)
+        font-size: 2.5em
 
 .about-img
-  height: 100px
-  width: 100px
+  height: 150px
+  width: 150px
   background-image: url('../img/studying.png')
   background-size: contain
