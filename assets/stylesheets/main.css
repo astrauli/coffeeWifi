@@ -190,14 +190,24 @@ body {
   .features-container .features-header {
     font-family: "Open Sans", sans-serif;
     font-size: 34px;
-    margin-top: 60px; }
+    padding-top: 60px; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .features-container .features-header {
+        font-size: 5em; } }
   .features-container .feature-items-container:nth-of-type(1) {
-    margin-top: 30px;
+    padding-top: 30px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     border-bottom: 1px solid #d4d6d8;
     justify-content: center; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .features-container .feature-items-container:nth-of-type(1) {
+        flex-direction: column;
+        border: none; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .features-container .feature-items-container:nth-of-type(1) .feature-item:nth-of-type(1) {
+        border: none; } }
     .features-container .feature-items-container:nth-of-type(1) .feature-item {
       display: flex;
       flex-direction: column;
@@ -205,7 +215,13 @@ body {
       justify-content: center;
       width: 300px;
       height: 200px;
-      margin: 20px 30px; }
+      padding: 20px 30px; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .features-container .feature-items-container:nth-of-type(1) .feature-item {
+          width: 55vw;
+          height: 20vh;
+          padding-top: 60px;
+          border-top: 1px #d4d6d8 solid; } }
       .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-picture-1 {
         padding: 10px;
         background-image: url("../img/funnel.png");
@@ -226,20 +242,29 @@ body {
         background-size: contain; }
       .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-content {
         text-align: center;
-        margin: 15px;
+        padding: 15px;
         font-family: "Open Sans", sans-serif;
         color: #333333; }
+        @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+          .features-container .feature-items-container:nth-of-type(1) .feature-item .feature-content {
+            font-size: 3.2em; } }
 
 .feature-item:nth-child(2) {
   border-left: 1px solid #d4d6d8;
   border-right: 1px solid #d4d6d8; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .feature-item:nth-child(2) {
+      border: none; } }
 
 .feature-items-container:nth-of-type(2) {
-  margin-top: 0px;
+  padding-top: 0px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
+  @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .feature-items-container:nth-of-type(2) {
+      flex-direction: column; } }
   .feature-items-container:nth-of-type(2) .feature-item {
     display: flex;
     flex-direction: column;
@@ -247,7 +272,13 @@ body {
     justify-content: center;
     width: 300px;
     height: 200px;
-    margin: 20px 30px; }
+    padding: 20px 30px; }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+      .feature-items-container:nth-of-type(2) .feature-item {
+        width: 55vw;
+        height: 20vh;
+        padding-top: 60px;
+        border-top: 1px #d4d6d8 solid; } }
     .feature-items-container:nth-of-type(2) .feature-item .feature-picture-4 {
       padding: 10px;
       background-image: url("../img/coffee-cup.png");
@@ -268,9 +299,18 @@ body {
       background-size: contain; }
     .feature-items-container:nth-of-type(2) .feature-item .feature-content {
       text-align: center;
-      margin: 15px;
+      padding: 15px;
       font-family: "Open Sans", sans-serif;
       color: #333333; }
+      @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+        .feature-items-container:nth-of-type(2) .feature-item .feature-content {
+          font-size: 3.2em; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  div[class*='-picture'] {
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px; } }
 
 .footer-container {
   border-top: 1px solid #ccc;
